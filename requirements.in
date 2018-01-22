@@ -1,0 +1,3 @@
+django>=2
+pip-tools
+-e git+https://github.com/wagtail/wagtail.git@master#egg=wagtail-2.0a0
