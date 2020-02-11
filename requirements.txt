@@ -5,25 +5,29 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 -e git+https://github.com/wagtail/wagtail.git@master#egg=wagtail-2.0a0
-beautifulsoup4==4.6.0
+beautifulsoup4==4.8.2
 certifi==2018.1.18        # via requests
 chardet==3.0.4            # via requests
 click==6.7                # via pip-tools
-django-modelcluster==4.0
-django-taggit==0.22.2
+django-modelcluster==5.0.1
+django-taggit==1.2.0
 django-treebeard==4.2.0
-django==2.0.1
+django==2.2.10
 djangorestframework==3.7.7
+draftjs-exporter==2.1.7
 first==2.0.1              # via pip-tools
 html5lib==0.999999999
 idna==2.6                 # via requests
+l18n==2018.5
 olefile==0.44             # via pillow
 pillow==4.3.0
 pip-tools==1.11.0
-pytz==2017.3              # via django, django-modelcluster
+pytz==2019.3              # via django, django-modelcluster, l18n
 requests==2.18.4
-six==1.11.0               # via html5lib, pip-tools
+six==1.11.0               # via html5lib, l18n, pip-tools
+soupsieve==1.9.5          # via beautifulsoup4
+sqlparse==0.3.0           # via django
 unidecode==0.4.21
 urllib3==1.22             # via requests
 webencodings==0.5.1       # via html5lib
-willow==1.1
+willow==1.3
